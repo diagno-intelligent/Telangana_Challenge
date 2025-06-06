@@ -1,7 +1,7 @@
-pydicom
-streamlit
-tensorflow
-pillow
-numpy
-opencv-python
-protobuf
+tensorflow=2.19.0
+protobuf=5.29.5
+streamlit=1.41.1
+pydicom=2.4.4
+pillow=11.2.1
+numpy=2.0.2
+opencv-python=4.11.0.86
