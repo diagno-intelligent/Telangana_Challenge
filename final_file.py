@@ -1048,7 +1048,7 @@ if page == "🏠 Home":
 
             # Simulate processing completion with enhanced results
             st.session_state.processing = False
-            st.session_state.processed_result = "result.jpg"
+            st.session_state.processed_result = "result.jpeg"
             st.session_state.report_data = AIAnalysisEngine.generate_realistic_report()
             SessionManager.update_stats()
             st.rerun()
@@ -1063,7 +1063,7 @@ if page == "🏠 Home":
 
             # Display enhanced result with better placeholder
             #st.markdown('<div class="image-container">', unsafe_allow_html=True)
-            st.image("result.jpg",
+            st.image("result.jpeg",
                      caption="🤖 AI Analysis Visualization", use_container_width=True)
             st.markdown('</div>', unsafe_allow_html=True)
 
