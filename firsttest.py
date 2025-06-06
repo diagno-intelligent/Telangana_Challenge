@@ -5,6 +5,7 @@ import tensorflow as tf
 import warnings
 from PIL import Image
 
+import io
 
 # Suppress retracing warning
 warnings.filterwarnings("ignore", category=UserWarning, message=r"tf.function retracing")
@@ -105,7 +106,8 @@ if uploaded_file is not None:
     uploaded_file.seek(0)  # rewind to start
     file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
     img = cv2.imdecode(file_bytes, cv2.IMREAD_COLOR)
-    img = cv2.resize(img, (img_size, img_size))
+    img = img.resize((img_size, img_size))  # tuple: (width, height)
+
     image = img.astype('float32') / 255.0
     image = np.expand_dims(image, axis=0)
     progress_bar.progress(30)
