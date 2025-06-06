@@ -1,11 +1,5 @@
 streamlit
-opencv-python-headless>=4.5.0
 numpy
 pillow
 pydicom
 tensorflow
-libGL1
-libglib2.0-0
-libsm6
-libxrender1
-libxext6
