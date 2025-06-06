@@ -4,4 +4,4 @@ numpy
 pillow
 pydicom
 tensorflow==2.13.0
-libgl1
+libgl1=2.1.1
