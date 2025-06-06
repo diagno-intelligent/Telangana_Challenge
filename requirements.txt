@@ -1,7 +1,5 @@
 pydicom
 streamlit
-tensorflow
 pillow
 numpy
 opencv-python
-protobuf
