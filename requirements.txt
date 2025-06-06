@@ -1,5 +1,6 @@
-pydicom
 streamlit
-pillow
+opencv-python==4.8.1.78
 numpy
-opencv-python
+pillow
+pydicom
+tensorflow==2.13.0
